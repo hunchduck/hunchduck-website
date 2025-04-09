@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog | Hunchduck.official</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    header h1 {
+      margin-top: 10px;
+    }
+    .catalog-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+    .catalog-slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .catalog-item {
+      margin-right: 20px;
+      flex: 0 0 auto;
+      width: 250px;
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+    .catalog-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .catalog-item h3 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .catalog-item p {
+      font-size: 16px;
+      color: #ddd;
+      margin-top: 5px;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 10px;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .prev-btn, .next-btn {
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .prev-btn:hover, .next-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hunchduck.official Catalog</h1>
+  </header>
+
+  <div class="catalog-container">
+    <div class="catalog-slider" id="slider">
+        <div class="catalog-item">
+            <img src="brand1.jpeg" alt="Design 1">
+            <h3>SOLD OUT!</h3>
+            <p></p>
+            <div class="price"></div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand2.jpeg" alt="Design 2">
+            <h3>SOLD OUT!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand3.jpeg" alt="Design 3">
+            <h3>SOLD OUT!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand4.jpeg" alt="Design 4">
+            <h3>AVAILABLE!</h3>
+            <p>Text and color can be changed.</p>
+            <div class="price">$100</div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand5.jpeg" alt="Design 1">
+            <h3>SOLD OUT!!</h3>
+            <p> </p>
+            <div class="price"></div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand6.jpeg" alt="Design 2">
+            <h3>AVAILABLE!</h3>
+            <p>Text and color can be changed.</p>
+            <div class="price">$100</div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand7.jpeg" alt="Design 3">
+            <h3>AVAILABLE!</h3>
+            <p>Text and color can be changed.</p>
+            <div class="price">$100</div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand8.jpeg" alt="Design 4">
+            <h3>AVAILABLE!</h3>
+            <p>Text and color can be changed.</p>
+            <div class="price">$100</div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand9.jpeg" alt="Design 1">
+            <h3>AVAILABLE!</h3>
+            <p>Text and color can be changed.</p>
+            <div class="price">$100</div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand10.jpeg" alt="Design 2">
+            <h3>SOLD OUT!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand11.jpeg" alt="Design 3">
+            <h3>AVAILABLE!</h3>
+            <p>Text and color can be changed.</p>
+            <div class="price">$100</div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand12.jpeg" alt="Design 4">
+            <h3>AVAILABLE!</h3>
+            <p>Text and color can be changed.</p>
+            <div class="price">$85</div>
+          </div>
+          <div class="catalog-item">
+            <img src="brand13.jpeg" alt="Design 4">
+            <h3>AVAILABLE!</h3>
+            <p>Text and color can be changed.</p>
+            <div class="price">$85</div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu1.jpeg" alt="Design 1">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu2.jpeg" alt="Design 2">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu3.jpeg" alt="Design 3">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu4.jpeg" alt="Design 4">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu5.jpeg" alt="Design 1">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu6.jpeg" alt="Design 2">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu7.jpeg" alt="Design 3">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu8.jpeg" alt="Design 4">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu9.jpeg" alt="Design 1">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu10.jpeg" alt="Design 2">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+          <div class="catalog-item">
+            <img src="mu11.jpeg" alt="Design 3">
+            <h3>MOCKUP PREVIEW!</h3>
+            <p> </p>
+            <div class="price"> </div>
+          </div>
+     
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="prev-btn" onclick="moveSlider('prev')">Back</button>
+    <button class="next-btn" onclick="moveSlider('next')">Next</button>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    let currentPosition = 0;
+    const slideWidth = 290; // Width of each item + margin
+
+    function moveSlider(direction) {
+      if (direction === 'next') {
+        if (currentPosition > -(slider.scrollWidth - slider.clientWidth)) {
+          currentPosition -= slideWidth;
+        }
+      } else if (direction === 'prev') {
+        if (currentPosition < 0) {
+          currentPosition += slideWidth;
+        }
+      }
+      slider.style.transform = `translateX(${currentPosition}px)`;
+    }
+  </script>
+
+</body>
+</html>
+<div class="buttons">
+    <a href="cp.html">
+      <button class="next-btn">Custom</button>
+      <a href="bahan.html">
+        <button class="next-btn">Home</button>
+    </a>
+  </div>
+  
+
+  <script>
+    function goBack() {
+      window.history.back(); 
+    }
+  </script>
+
+</body>
+</html>
+
+<footer>
+    <p style="text-align:center; color: #fff; padding: 20px 0;">&copy; 2022 Hunchduck.official | All rights reserved.</p>
+  </footer>
+
+<!-- Tambahkan Font Awesome untuk ikon -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+  function goBack() {
+    window.history.back(); // Fungsi untuk kembali ke halaman sebelumnya
+  }
+</script>
+</body>
+</html>

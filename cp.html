@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Person | Hunchduck.official</title>
+  <style>
+    /* Mengatur latar belakang warna solid */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212; /* Warna latar belakang gelap */
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    
+    header {
+      text-align: center;
+      padding: 50px;
+      background-color: #1a1a1a; /* Warna latar belakang header */
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+
+    header h1 {
+      margin-top: 20px;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px;
+      background: rgba(0, 0, 0, 0.7); /* Transparansi latar belakang untuk teks lebih mudah dibaca */
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 50px auto;
+    }
+
+    .contact-container h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #ff0000; /* Warna emas untuk menambah kesan mewah */
+    }
+
+    .contact-item {
+      margin: 15px 0;
+      font-size: 18px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-item i {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+
+    .contact-item a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contact-item a:hover {
+      color: #ff0000; /* Warna emas pada hover untuk efek elegan */
+    }
+
+    .contact-item p {
+      font-size: 18px;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ff0000; /* Warna emas saat hover */
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #fff;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="hnchdcklogo.png" alt="Hunchduck.official Logo">
+    <h1>Contact Person | Hunchduck.official</h1>
+  </header>
+
+  <div class="contact-container">
+    <h2>Get in Touch</h2>
+
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <p> Email: <a href="mailto:hunchduckofficial@gmail.com">hunchduck.official@gmail.com</a></p>
+
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-whatsapp"></i>
+      <p>Whatsapp:  <a href="https://wa.me/081572460801" target="_blank">(+62) 81572460801</a></p>
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-instagram"></i>
+      <p>Instagram:  <a href="https://instagram.com/hunchduck_" target="_blank">@hunchduck_</a></p>
+    </div>
+
+    <!-- Tombol Back -->
+    <button class="back-btn" onclick="goBack()">Back</button>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2022 Hunchduck.official | All Rights Reserved</p>
+  </footer>
+
+  <!-- Tambahkan Font Awesome untuk ikon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    function goBack() {
+      window.history.back(); 
+    }
+  </script>
+</body>
+</html>
